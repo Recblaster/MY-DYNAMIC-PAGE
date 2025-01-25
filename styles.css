@@ -1,6 +1,9 @@
 body {
     background-color: pink;
     font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .frame {
@@ -9,6 +12,7 @@ body {
     justify-content: center;
     height: 100vh;
     position: relative;
+    animation: fadeIn 1s ease-in;
 }
 
 .textbox {
@@ -27,6 +31,7 @@ body {
     padding: 10px 20px;
     cursor: pointer;
     animation: fadeIn 1s ease-in;
+    margin-top: 20px;
 }
 
 @keyframes fadeIn {
@@ -70,6 +75,17 @@ body {
     animation: rise 4s ease-in-out infinite;
 }
 
+.balloon::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: lightblue;
+    transform: translateX(-50%);
+}
+
 @keyframes rise {
     0% {
         transform: translateY(0);
@@ -77,4 +93,17 @@ body {
     100% {
         transform: translateY(-100vh);
     }
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFC0CB;
+    animation: confetti-fall 3s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); }
 }
