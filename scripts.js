@@ -40,12 +40,15 @@ window.onload = function () {
             });
         } else if (frameIndex === 7) {
             createTextBox(frame, "Lets cut the cake Madam jiii!!", "🎂 SHARAYU", function() {
+                showConfetti();
                 alert("🎉HAPPY BIRTHDAY SHARAYU🎉");
                 nextFrame();
             });
         } else if (frameIndex === 8) {
             createFloatingHearts();
-            createTextBox(frame, "I LOVE YOU 💚", "Hope You Liked this", nextFrame);
+            createTextBox(frame, "I LOVE YOU 💚", "Hope You Liked this", function() {
+                // No alert message here
+            });
         }
 
         container.appendChild(frame);
@@ -54,11 +57,11 @@ window.onload = function () {
     function createTextBox(frame, text, buttonText, buttonAction) {
         let textbox = document.createElement("div");
         textbox.className = "textbox";
-        var p1 = document.createElement("p");
+        let p1 = document.createElement("p");
         p1.className = "center";
         p1.textContent = "✨";
-        var p2 = document.createElement("p");
-        p2.className = "center white";
+        let p2 = document.createElement("p");
+        p2.className = "center";
         p2.textContent = text;
         let button = document.createElement("button");
         button.className = "button";
@@ -99,6 +102,16 @@ window.onload = function () {
             balloon.style.left = (i * 10) + "%";
             balloon.style.animationDuration = Math.random() * 2 + 2 + "s";
             document.body.appendChild(balloon);
+        }
+    }
+
+    function showConfetti() {
+        for (let i = 0; i < 100; i++) {
+            let confetti = document.createElement("div");
+            confetti.className = "confetti";
+            confetti.style.left = Math.random() * 100 + "vw";
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 75%)`;
+            document.body.appendChild(confetti);
         }
     }
 
