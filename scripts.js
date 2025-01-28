@@ -50,7 +50,7 @@ window.onload = function () {
     "If you are reading this,that means things did work out between us,finally last baar baat karne vaala idea kaam kar hi gaya😆.So happy today ki I am able to give you this code.Last bday pe bas ek shayari likhi thi vo bhi block tha.Soo I wanted to give you something truly remarkable, something only I could have thought of, so it becomes an unforgettable memory.\n\n" +
     "I LOVE YOU 💚\n\n" +
     "                        ~Yours ausom Iro_xD😉",
-    "Hope You Liked this🤍",
+    "Hope You Liked this❤",
     function() {
         // No alert message here
     }
