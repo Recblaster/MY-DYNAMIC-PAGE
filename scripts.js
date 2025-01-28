@@ -23,7 +23,7 @@ window.onload = function () {
         } else if (frameIndex === 3) {
             createTextBox(frame, "Wanna see what I've made?", "Let's Gooo 🥳", nextFrame);
         } else if (frameIndex === 4) {
-            createTextBox(frame, "Have a look at it madam jii😊", "Wait", async function() {
+            createTextBox(frame, "Have a look at it madam jii😊", "Click And Wait", async function() {
                 await wait3Seconds();
                 nextFrame();
             });
@@ -35,7 +35,7 @@ window.onload = function () {
             });
         } else if (frameIndex === 6) {
             createButton(frame, "Decorate", function() {
-                createTextBox(frame, "🎉Happy Birthday Sharayu🎉", "Fly the balloons", nextFrame);
+                createTextBox(frame, "Happy Birthday Sharayu🤗", "Main event pe chale?", nextFrame);
                 addBalloons();
             });
         } else if (frameIndex === 7) {
@@ -46,7 +46,12 @@ window.onload = function () {
             });
         } else if (frameIndex === 8) {
             createFloatingHearts();
-            createTextBox(frame, "I LOVE YOU 💚", "Hope You Liked this", function() {
+            createTextBox(frame, "If you are reading this,that means things did work out between us,finally last baar baat karne vaala idea kaam kar hi gaya😆.So happy today ki I am able to give you this code.Last bday pe bas ek shayari likhi thi vo bhi block tha.Soo I wanted to give you something truly remarkable, something only I could have thought of, so it becomes an unforgettable memory.
+And let me end this with something I've always wanted to say to you in person...
+
+I LOVE YOU 💚
+
+~Yours ausom Iro_xD😉", "Hope You Liked this🤍", function() {
                 // No alert message here
             });
         }
