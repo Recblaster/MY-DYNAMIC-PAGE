@@ -47,15 +47,9 @@ window.onload = function () {
         } else if (frameIndex === 8) {
             createFloatingHearts();
             createTextBox(frame, 
-    "If you are reading this, that means things did work out between us,\n" +
-    "finally last baar baat karne vaala idea kaam kar hi gaya😆.\n" +
-    "So happy today ki I am able to give you this code.\n" +
-    "Last bday pe bas ek shayari likhi thi vo bhi block tha.\n" +
-    "Soo I wanted to give you something truly remarkable,\n" +
-    "something only I could have thought of, so it becomes an unforgettable memory.\n" +
-    "And let me end this with something I've always wanted to say to you in person...\n\n" +
+    "If you are reading this, that means things did work out between us,finally last baar baat karne vaala idea kaam kar hi gaya😆.So happy today ki I am able to give you this code.Last bday pe bas ek shayari likhi thi vo bhi block tha.Soo I wanted to give you something truly remarkable,something only I could have thought of, so it becomes an unforgettable memory.And let me end this with something I've always wanted to say to you in person...\n\n" +
     "I LOVE YOU 💚\n\n" +
-    "~Yours ausom Iro_xD😉",
+    "                        ~Yours ausom Iro_xD😉",
     "Hope You Liked this🤍",
     function() {
         // No alert message here
